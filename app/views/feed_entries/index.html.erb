@@ -1,7 +1,7 @@
 <div class="layer1">
  <div id = "header" > Wired Top Stories </div>
   <% @feed_entries.each do |entry|  %>
-   <%= link_to content_tag(:p, entry.title.html_safe,class: "heading"), feed_entry_path(entry),remote: true,id:  entry.id %>
+   <%= link_to content_tag(:p, entry.title.html_safe,class: "heading"), feed_entry_path(entry),remote: true,id:  entry.id, class: "feed_link" %>
      <div class="content"></div>  
      <% end %>
 </div>
