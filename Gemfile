@@ -5,7 +5,7 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+#gem 'sqlite3'
 
 
 # Gems used only for assets and not required
@@ -24,6 +24,8 @@ gem 'jquery-rails'
 gem 'therubyracer'
 gem "feedzirra"
 gem 'will_paginate','3.0'
+#Added for heroku
+gem 'pg'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
