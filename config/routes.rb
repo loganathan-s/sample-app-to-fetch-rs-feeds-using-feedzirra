@@ -1,4 +1,17 @@
 RailsInterviewProblem::Application.routes.draw do
+	
+  root :to => "feed_entries#index"
+  
+      resources :feed_entries,only: [:index,:show] do
+       member do
+         get 'show'
+       end
+  
+       collection do
+         get 'index'
+       end
+     end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -14,16 +27,7 @@ RailsInterviewProblem::Application.routes.draw do
   #   resources :products
 
   # Sample resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
+ 
 
   # Sample resource route with sub-resources:
   #   resources :products do

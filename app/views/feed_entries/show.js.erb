@@ -1,0 +1,3 @@
+$(".content").remove();
+$("#<%= @feed_entry.id %>").after("<div class='content'><%= feed_content(@feed_entry.content) %></div>");
+$("#<%= @feed_entry.id %>").next(".content").slideDown("10");
